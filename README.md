@@ -1,4 +1,4 @@
-## Programare Orientata pe Obiecte in Java
+## Programare avansata pe obiecte in Java
 
 ### Punctaj
 * 50% examen final
