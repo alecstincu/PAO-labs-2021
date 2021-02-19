@@ -8,7 +8,7 @@ Conditia de punctare a proiectelor:
 - sa se implementeze cerintele date.
 
 Termene de predare:
-- Etapa I: 06 aprilie
+- Etapa I: 30 martie
 - Etapa II: 27 aprilie
 - Etapa III: 25 mai
 
