@@ -8,9 +8,9 @@ Conditia de punctare a proiectelor:
 - sa se implementeze cerintele date.
 
 Termene de predare:
-- Etapa I: TBD
-- Etapa II: TBD
-- Etapa III: TBD
+- Etapa I: 06 aprilie
+- Etapa II: 27 aprilie
+- Etapa III: 25 mai
 
 ## Etapa I
 
@@ -22,7 +22,7 @@ Sa se implementeze in limbajul Java o aplicatie pe baza celor definite la primul
 
 Aplicatia va contine:
 - clase simple cu atribute private / protected si metode de acces;
-- cel putin 2 colectii diferite capabile sa gestioneze obiectele definite anterior (ex: List, Set, Map, etc.) dintre care cel putin una sa fie sortata ;
+- cel putin 2 colectii diferite capabile sa gestioneze obiectele definite anterior (ex: List, Set, Map, etc.) dintre care cel putin una sa fie sortata;
 – se vor folosi array-uri uni/bidimensionale in cazul in care nu se parcurg colectiile pana la data checkpoint-ului.
 - utilizare mostenire pentru crearea de clase aditionale si utilizarea lor in cadrul colectiilor;
 - cel putin o clasa serviciu care sa expuna operatiile sistemului;
@@ -34,7 +34,7 @@ Aplicatia va contine:
 - Se vor realiza fisiere de tip CSV pentru cel putin 4 dintre clasele definite in prima etapa.
 Fiecare coloana din fisier este separata de virgula. Exemplu: nume,prenume,varsta
 
-- Se vor realiza servicii singleton generice pentru scrierea si citirea din fisiere;
+- Se vor realiza servicii generice pentru scrierea si citirea din fisiere;
 
 - La pornirea programului se vor incarca datele din fisiere utilizand serviciile create;
 
