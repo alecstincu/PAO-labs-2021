@@ -23,7 +23,7 @@ public class Instructions {
          * until it reached the break in case 3. if no case is matches, the default case is executed. if there is no
          * default case and there is no case that matches, no instructions in the switch are executed.
          */
-        int someValue = 4;
+        int someValue = 10;
         switch (someValue) {
             case 1:
             case 2:
@@ -46,9 +46,9 @@ public class Instructions {
          * separated by a comma (,)), checks the boolean condition in the second block (if any) and if true, executes the
          * body. At the end of each body execution, it runs the steps in the final section.
          */
-        int i, j;
-        for (i = 0, j = 4; i < 10; i++) {
+        for (int i = 0, j = 4; i < 10 && j < 10; i++, j++) {
             System.out.println(i);
+            System.out.println(j);
         }
 
         /* while
@@ -56,6 +56,7 @@ public class Instructions {
          * checks if the boolean condition in the while is true. If so, it executes the body and goes to the start,
          * reevaluating the expression and rerunning if necessary.
          */
+        int i = 0;
         while (i < 7) {
             i++;
             System.out.println("I am in while");

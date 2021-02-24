@@ -2,14 +2,15 @@ package ro.unibuc.pao.arrays;
 
 public class Example4 {
     public static void main(String[] args) {
-        //int[][] wrong = new int[][]; // not OK, you must specify 1st dimension
+//        int[][] wrong = new int[][]; // not OK, you must specify 1st dimension
         int[][] right = new int[2][]; // OK
+        int right2[][] = new int[2][]; // OK
 
         String[][] myArray = new String[5][]; // OK
         String[][] yourArray = new String[5][4]; // OK
 
         // initializing two dimensional array as literal
-        String[][] names = {{"Sam", "Smith"}, {"Robert", "Downey Jr"}, {"Ryan", "Gosling"},};
+        String[][] names = {{"Sam", "Smith"}, {"Robert", "Downey Jr"}, {"Ryan", "Gosling"}};
         for (int i = 0; i < names.length; i++) {
             for (int j = 0; j < names[i].length; j++) {
                 System.out.print(names[i][j]+ " ");
@@ -23,8 +24,8 @@ public class Example4 {
                 board[i][j] = i + j;
             }
         }
-        for (int[] ints : board) {
-            for (int anInt : ints) {
+        for (int[] cols : board) {
+            for (int anInt : cols) {
                 System.out.print(anInt);
             }
             System.out.println();

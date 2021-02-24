@@ -30,7 +30,7 @@ public class Primitives {
         // 32 bit; 4 bytes
         int i1 = 10;
 
-        int i2 = 0b10110; // binar incepe cu 0b sau 0B apoi [0-1]
+        int i2 = 0b1_0110; // binar incepe cu 0b sau 0B apoi [0-1]
 
         int r1, r2, r3; // se pot declara mai multe zone de memorie cu virgula intre ele
         int r4, r5 = 10, r6;
@@ -51,6 +51,7 @@ public class Primitives {
         double d1 = 123.456;
 
         // 16 bit
+        // TODO: default
         char c1 = 'a'; // caracterele in Java se pun intre ghilimele simple ''; 16-bit Unicode character.
         char c2 = '\n';
 

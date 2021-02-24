@@ -23,7 +23,7 @@ package ro.unibuc.pao.structure;
  * java.lang => pachet special din Java ce nu trebuie importat
  * (de exemplu, clasa System folosita pentru a printa mesaje in consola, face parte din acest pachet)
  */
-public class ClassStructure {
+class ClassStructure {
 
     public static void main(String[] args) {
         System.out.println("Hello world!");
@@ -34,7 +34,7 @@ public class ClassStructure {
 /**
  * Un fisier Java poate avea mai multe definitii de clase in el. Insa doar una poate fi publica.
  */
-class NonPublicClass {
+public class NonPublicClass {
 
     /**
      * class field
@@ -46,5 +46,9 @@ class NonPublicClass {
      */
     public void somethingElse() {
     }
+}
+
+class Test {
+
 }
 
