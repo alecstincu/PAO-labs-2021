@@ -2,7 +2,7 @@
 
 
 Fiecare student va lucra la un proiect individual.
-Proiectul este structurat in mai multe etape.
+Proiectul este structurat in mai multe etape, inaine de finalul fiecareia trebuie sa uploadati pe github rezolvarile. Nu se mai iau in considerare rezolvarile uploadate dupa termen!
 Conditia de punctare a proiectelor:
 - sa nu prezinte erori de compilare 
 - sa se implementeze cerintele date.
@@ -51,7 +51,10 @@ Structura fisierului: nume_actiune, timestamp
 
 Sa se realizeze servicii care sa expuna operatii de tip create, read, update si delete pentru cel putin 4 dintre clasele definite.
 
-## Teme sugerate
+## Bonus
+Interfata grafica :)
+
+## Teme:
 1) catalog (student, materie, profesor)
 2) biblioteca (sectiuni, carti, autori, cititori)
 3) programare cabinet medical (client, medic, programare)
