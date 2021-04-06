@@ -37,7 +37,7 @@ class Test2 {
     public static void main(String[] args) {
         Test2 object = new Test2();
         object.a();
-        object.display();
+        object.display(); //abdec
     }
 
 }

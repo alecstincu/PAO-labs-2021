@@ -11,12 +11,11 @@ public class Test1 {
         try {
             throw new Derived();
         }
-//        catch (Base b) {
-//            System.out.println("Caught base class exception");
-//        }
         catch (Derived d) {
             System.out.println("Caught derived class exception");
         }
-
+        catch (Base b) {
+            System.out.println("Caught base class exception");
+        }
     }
 }

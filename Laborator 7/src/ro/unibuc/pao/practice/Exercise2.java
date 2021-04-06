@@ -1,5 +1,7 @@
 package ro.unibuc.pao.practice;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 /**
@@ -8,7 +10,7 @@ import java.util.Scanner;
  * In cazul in care nu apare vreo exceptie, scrieti intr-un fisier operatia executata, inputurile si rezultatul final.
  * Ex:
  * [ADD] 2.0 3.0 5.0
- * [DIVIDE] 5.0 2.0 2.5
+ * [DIVIDE] 2.0 3.0 0.6
  */
 public class Exercise2 {
     public static void main(String[] args) {
@@ -18,9 +20,29 @@ public class Exercise2 {
         System.out.println("Introduceti al doilea nr: ");
         double nr2 = scanner.nextDouble();
 
-        // TODO: initialize
-        Calculator calculator = null;
+        Calculator calculator = new CalculatorImpl();
 
-        // TODO: write to file if conditions met
+        try {
+            Double res = calculator.add(nr1, nr2);
+            String text = "[ADD]" + " " + nr1 + " " + nr2 + " " + res;
+            writeUsingFileWriter(text, false);
+
+            res = calculator.divide(nr1, nr2);
+            text = "[DIVIDE]" + " " + nr1 + " " + nr2 + " " + res;
+            writeUsingFileWriter(text, true);
+
+        } catch (Calculator.BadInputException | Calculator.InvalidParameterException e) {
+            System.out.println(e.getMessage());
+        }
+
+    }
+
+    public static void writeUsingFileWriter(String text, boolean append) {
+        try (FileWriter fileWriter = new FileWriter("ex2.txt", append)) {
+            fileWriter.append(text);
+            fileWriter.append("\n");
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
     }
 }

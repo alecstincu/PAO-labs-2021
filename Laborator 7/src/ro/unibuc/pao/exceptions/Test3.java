@@ -5,21 +5,21 @@ class Test3 {
 
     void a() throws Exception {
         try {
-            count++;
+            count++; //1
 
             try {
-                count++;
+                count++; //2
 
                 try {
-                    count++;
+                    count++; //3
                     throw new Exception();
 
                 } catch (Exception ex) {
-                    count++;
+                    count++; //4
                     throw new Exception();
                 }
             } catch (Exception ex) {
-                count++;
+                count++; //5
             }
         } catch (Exception ex) {
             count++;
@@ -34,6 +34,6 @@ class Test3 {
     public static void main(String[] args) throws Exception {
         Test3 obj = new Test3();
         obj.a();
-        obj.display();
+        obj.display(); // 5
     }
 }
