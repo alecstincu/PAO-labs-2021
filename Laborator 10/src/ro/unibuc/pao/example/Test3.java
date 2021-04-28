@@ -9,7 +9,5 @@ public class Test3 extends Thread implements Runnable {
         Test3 obj = new Test3();
         obj.start();
         obj.run();
-
-        System.console().flush();
     }
 }
